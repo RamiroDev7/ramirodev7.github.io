@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 125%;
+    overflow: hidden;
+    background-color: #07091b;
+    font-family: "Poppins", sans-serif;
+    overflow-y: scroll;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 145%;
+}
+
+.screenInitial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #F5F5DC;
+    margin-bottom: 140px;
+}
+
+.titles {
+    margin-bottom: 20px;
+}
+
+.titles h1 {
+    font-size: 320%;
+}
+
+.titles h2 {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.contacts {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contactImg {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background-color: #f5f5dcdb;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+}
+
+.contactImg:hover {
+    background-color: rgba(163, 163, 146, 0.282);
+}
+
+.image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.apps-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #F5F5DC;
+    background-color: #3333337e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apps-button:hover {
+    background-color: #a3a39285;
+}
+
+/* ---------- */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #5252527e;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.qr-code {
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.contentApp {
+    display: flex;
+    flex-direction: row;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.contentApp h2 {
+    margin: 0px;
+    color: #F5F5DC;
+    font-size: 130%;
+    width: 130px;
+}
+
+.contentDownload {
+    display: flex;
+    flex: row;
+    gap: 15px;
+}
+
+.store-button {
+    background-color: #00000000;
+}
+
+.store-button img {
+    border-radius: 7px;
+    width: 150px; 
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.app-store {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+/* ---------- */
+
+@media (min-width: 769px) { /* Pantallas grandes */
+    .screenInitial {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        margin-top: 140px;
+        margin-bottom: 140px;
+    }
+    .card {
+        width: 370px;
+    }
+
+    .icon, .qr-code {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .card-container {
+        flex-direction: row;
+    }
+
+    .titles {
+        margin-right: 40px;
+    }
+
+    .image {
+        margin-left: 40px;
+        max-width: 350px;
+    }
+}
